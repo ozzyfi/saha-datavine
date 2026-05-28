@@ -18,7 +18,7 @@ import { workspaceName, workspaceInitial } from "@/lib/workspaceName";
 import { useOrgRecordCount, RECORD_QUOTA } from "@/hooks/useOrgRecordCount";
 import { useAuth } from "@/contexts/AuthContext";
 import { useUserOrg } from "@/hooks/useUserOrg";
-import sahaLogo from "@/assets/saha-logo.png";
+import sahaLogo from "@/assets/toola-logo.png";
 import sahaMark from "@/assets/saha-mark.png";
 import { DashboardScreen } from "@/pages/screens/DashboardScreen";
 import { DataSourcesScreen } from "@/pages/screens/DataSourcesScreen";
