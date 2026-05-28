@@ -135,7 +135,7 @@ export function WorkflowPanel() {
           <div className="mt-5 rounded-md border border-border bg-card p-4">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs font-medium tracking-widest text-muted-foreground uppercase">
-                Claude · saha.team
+                Claude · ToolA
               </span>
               {streaming && <span className="text-xs text-muted-foreground">streaming…</span>}
             </div>
@@ -228,7 +228,7 @@ export function LocalLLMConfig() {
         </button>
       </div>
       <p className="mt-2 text-xs text-muted-foreground">
-        Saved locally per workspace. Used to point Claude · saha.team at your private model.
+        Saved locally per workspace. Used to point Claude · ToolA at your private model.
       </p>
     </div>
   );
@@ -246,8 +246,8 @@ export function AIClientPanel({ compact = false }: { compact?: boolean }) {
             <Step n={1}>Open Claude Desktop → Settings → Connectors</Step>
             <Step n={2}>Click "Add custom connector" at the bottom-left</Step>
             <Step n={3}>
-              Set Name to "saha.team" and paste this URL:
-              <div className="mt-3"><CodeBlock>https://api.saha.team/mcp</CodeBlock></div>
+              Set Name to "ToolA" and paste this URL:
+              <div className="mt-3"><CodeBlock>https://api.toola.co/mcp</CodeBlock></div>
             </Step>
             <Step n={4}>Click Add, then click Connect</Step>
           </ol>
@@ -257,7 +257,7 @@ export function AIClientPanel({ compact = false }: { compact?: boolean }) {
           <ol className="space-y-3">
             <Step n={1}>
               Run this command in your terminal:
-              <div className="mt-3"><CodeBlock>claude mcp add saha-team --transport http https://api.saha.team/mcp</CodeBlock></div>
+              <div className="mt-3"><CodeBlock>claude mcp add saha-team --transport http https://api.toola.co/mcp</CodeBlock></div>
             </Step>
           </ol>
         </div>
@@ -270,8 +270,8 @@ export function AIClientPanel({ compact = false }: { compact?: boolean }) {
           <Step n={1}>Open your ChatGPT workspace admin / connectors area</Step>
           <Step n={2}>Create a new enterprise connector or API integration</Step>
           <Step n={3}>
-            Use the saha.team gateway URL below:
-            <div className="mt-3"><CodeBlock>https://api.saha.team/chatgpt-connector</CodeBlock></div>
+            Use the ToolA gateway URL below:
+            <div className="mt-3"><CodeBlock>https://api.toola.co/chatgpt-connector</CodeBlock></div>
           </Step>
           <Step n={4}>Grant access only to approved field memory datasets</Step>
         </ol>
@@ -285,7 +285,7 @@ export function AIClientPanel({ compact = false }: { compact?: boolean }) {
           <Step n={2}>Add a new external knowledge or custom API source</Step>
           <Step n={3}>
             Use this endpoint:
-            <div className="mt-3"><CodeBlock>https://api.saha.team/copilot</CodeBlock></div>
+            <div className="mt-3"><CodeBlock>https://api.toola.co/copilot</CodeBlock></div>
           </Step>
           <Step n={4}>Map access policies for maintenance, QA and compliance teams</Step>
         </ol>
@@ -296,10 +296,10 @@ export function AIClientPanel({ compact = false }: { compact?: boolean }) {
         <div className="text-xs font-medium tracking-widest text-muted-foreground uppercase mb-3">Local / On-prem LLM</div>
         <ol className="space-y-3">
           <Step n={1}>Deploy your local model inside your private network</Step>
-          <Step n={2}>Whitelist saha.team's internal MCP or REST endpoint</Step>
+          <Step n={2}>Whitelist ToolA's internal MCP or REST endpoint</Step>
           <Step n={3}>
             Use this internal endpoint:
-            <div className="mt-3"><CodeBlock>https://api.saha.team/local-llm</CodeBlock></div>
+            <div className="mt-3"><CodeBlock>https://api.toola.co/local-llm</CodeBlock></div>
           </Step>
           <Step n={4}>All field data stays inside your environment</Step>
         </ol>
@@ -311,10 +311,10 @@ export function AIClientPanel({ compact = false }: { compact?: boolean }) {
         <div className="text-xs font-medium tracking-widest text-muted-foreground uppercase mb-3">Custom Agent / Internal Apps</div>
         <ol className="space-y-3">
           <Step n={1}>Create an API key from the API / MCP page</Step>
-          <Step n={2}>Use saha.team tools to search field memory and asset history</Step>
+          <Step n={2}>Use ToolA tools to search field memory and asset history</Step>
           <Step n={3}>
             Base URL:
-            <div className="mt-3"><CodeBlock>https://api.saha.team/v1</CodeBlock></div>
+            <div className="mt-3"><CodeBlock>https://api.toola.co/v1</CodeBlock></div>
           </Step>
           <Step n={4}>Call tools like search_field_memory, get_asset_history, create_followup_task</Step>
         </ol>

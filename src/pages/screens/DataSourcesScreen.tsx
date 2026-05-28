@@ -31,7 +31,7 @@ export function DataSourcesScreen() {
           <button onClick={() => { dismissOnboarding(ONBOARDING_DATASOURCES_KEY); setShowOnboarding(false); }} className="absolute top-5 right-5 text-muted-foreground hover:text-foreground">
             <X className="h-4 w-4" />
           </button>
-          <h2 className="font-serif text-3xl text-foreground">Welcome to saha.team</h2>
+          <h2 className="font-serif text-3xl text-foreground">Welcome to ToolA</h2>
           <p className="text-sm text-muted-foreground mt-1">0 / 5 free queries used · No credit card required</p>
 
           <div className="mt-8">
@@ -40,7 +40,7 @@ export function DataSourcesScreen() {
               <div className="flex-1 min-w-0">
                 <div className="text-foreground font-medium">Connect an AI client</div>
                 <p className="text-sm text-muted-foreground mt-1 mb-5">
-                  Connect your AI assistant to access your organization's field data through saha.team.
+                  Connect your AI assistant to access your organization's field data through ToolA.
                 </p>
                 <AIClientPanel />
               </div>

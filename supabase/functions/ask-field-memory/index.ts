@@ -93,7 +93,7 @@ Deno.serve(async (req) => {
       .join("\n");
 
     const system =
-      `You are saha.team's field memory assistant. Answer concisely using ONLY the provided field records as evidence. ` +
+      `You are ToolA's field memory assistant. Answer concisely using ONLY the provided field records as evidence. ` +
       `If the records don't contain the answer, say so plainly. Workflow context: ${workflow ?? "General Search"}.`;
     const userMsg =
       `Question: ${query}\n\n--- Last ${records?.length ?? 0} field records ---\n${contextBlock || "(no records)"}`;
