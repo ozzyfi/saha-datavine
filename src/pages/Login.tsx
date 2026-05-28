@@ -45,7 +45,9 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
       <div className="w-full max-w-sm border border-border rounded-lg bg-card p-8">
-        <img src={sahaLogo} alt="ToolA" className="h-10 w-auto mb-8 block" />
+        <div className="mt-2 mb-6">
+          <img src={sahaLogo} alt="ToolA" className="w-[120px] h-auto block" />
+        </div>
         <h1 className="font-serif text-2xl text-foreground mb-1">
           {mode === "signin" ? "Sign in" : "Create account"}
         </h1>
