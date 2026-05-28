@@ -25,7 +25,7 @@ export function DashboardScreen({ showOnboarding, onClose }: { showOnboarding: b
           <button onClick={onClose} className="absolute top-5 right-5 text-muted-foreground hover:text-foreground" aria-label="Close">
             <X className="h-4 w-4" />
           </button>
-          <h2 className="font-serif text-3xl text-foreground">Welcome to saha.team</h2>
+          <h2 className="font-serif text-3xl text-foreground">Welcome to ToolA</h2>
           <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
             Şirketinizin saha verisini AI-ready hale getirin. Verinizi ChatGPT, Claude, Copilot veya kendi modelinizle güvenli şekilde sorgulayın.
           </p>

@@ -59,7 +59,7 @@ export function APIScreen() {
         <p className="text-sm text-muted-foreground mt-1 mb-4">
           Claude, Cursor, ChatGPT connector veya custom agent'lar için model-bağımsız erişim.
         </p>
-        <CodeBlock>https://api.saha.team/mcp</CodeBlock>
+        <CodeBlock>https://api.toola.co/mcp</CodeBlock>
       </section>
 
       {keysError ? (
