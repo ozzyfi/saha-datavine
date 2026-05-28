@@ -248,7 +248,7 @@ export function MobileTopBar({ active, onMenu }: { active: Screen; onMenu: () =>
       <button onClick={onMenu} className="p-2 -ml-2 rounded-md hover:bg-accent" aria-label="Open menu">
         <Menu className="h-5 w-5" />
       </button>
-      <LogoFull className="h-6" />
+      <Logo size="sm" />
       <span className="ml-auto text-xs text-muted-foreground">{SCREEN_LABEL[active]}</span>
     </div>
   );
