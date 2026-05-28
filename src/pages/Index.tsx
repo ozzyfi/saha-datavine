@@ -18,7 +18,7 @@ import { workspaceName, workspaceInitial } from "@/lib/workspaceName";
 import { useOrgRecordCount, RECORD_QUOTA } from "@/hooks/useOrgRecordCount";
 import { useAuth } from "@/contexts/AuthContext";
 import { useUserOrg } from "@/hooks/useUserOrg";
-import sahaLogo from "@/assets/toola-logo.png";
+import { Logo } from "@/components/Logo";
 import sahaMark from "@/assets/saha-mark.png";
 import { DashboardScreen } from "@/pages/screens/DashboardScreen";
 import { DataSourcesScreen } from "@/pages/screens/DataSourcesScreen";
@@ -83,9 +83,10 @@ export function LogoMark({ className = "h-6 w-6" }: { className?: string }) {
   return <img src={sahaMark} alt="ToolA" className={className} />;
 }
 
-export function LogoFull({ className = "h-7" }: { className?: string }) {
-  return <img src={sahaLogo} alt="ToolA" className={`${className} w-auto`} />;
+export function LogoFull({ className }: { className?: string }) {
+  return <Logo size="sidebar" className={className} />;
 }
+
 
 export function CodeBlock({ children }: { children: string }) {
   return (
@@ -140,12 +141,12 @@ export function SidebarContents({ active, onNavigate }: { active: Screen; onNavi
 
   return (
     <div className="h-full flex flex-col">
-      <div className="px-6 pt-7 pb-6">
-        <LogoFull className="h-12" />
+      <div className="px-6 pt-7 pb-5">
+        <Logo size="sidebar" />
       </div>
 
-
       <div className="px-6 pb-6 space-y-6">
+
         <button className="w-full flex items-center justify-between rounded-md border border-border bg-card px-3 py-2.5 text-left hover:border-foreground/20 transition-colors">
           <div className="flex items-center gap-2.5 min-w-0">
             <div className="h-7 w-7 rounded bg-primary text-primary-foreground flex items-center justify-center text-xs font-medium shrink-0">
@@ -247,7 +248,7 @@ export function MobileTopBar({ active, onMenu }: { active: Screen; onMenu: () =>
       <button onClick={onMenu} className="p-2 -ml-2 rounded-md hover:bg-accent" aria-label="Open menu">
         <Menu className="h-5 w-5" />
       </button>
-      <LogoFull className="h-6" />
+      <Logo size="sm" />
       <span className="ml-auto text-xs text-muted-foreground">{SCREEN_LABEL[active]}</span>
     </div>
   );

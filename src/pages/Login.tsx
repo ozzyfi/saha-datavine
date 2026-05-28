@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/contexts/AuthContext";
-import sahaLogo from "@/assets/saha-logo.png";
+import { Logo } from "@/components/Logo";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -45,9 +45,10 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
       <div className="w-full max-w-sm border border-border rounded-lg bg-card p-8">
-        <div className="mt-2 mb-5">
-          <img src={sahaLogo} alt="ToolA" className="w-[190px] h-auto block" />
+        <div className="mt-2 mb-6">
+          <Logo size="login" />
         </div>
+
         <h1 className="font-serif text-2xl text-foreground mb-1">
           {mode === "signin" ? "Sign in" : "Create account"}
         </h1>
