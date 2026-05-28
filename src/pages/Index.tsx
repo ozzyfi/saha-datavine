@@ -140,9 +140,10 @@ export function SidebarContents({ active, onNavigate }: { active: Screen; onNavi
 
   return (
     <div className="h-full flex flex-col">
-      <div className="p-6">
-        <LogoFull className="h-8" />
+      <div className="px-6 pt-7 pb-6">
+        <LogoFull className="h-12" />
       </div>
+
 
       <div className="px-6 pb-6 space-y-6">
         <button className="w-full flex items-center justify-between rounded-md border border-border bg-card px-3 py-2.5 text-left hover:border-foreground/20 transition-colors">
