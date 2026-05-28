@@ -45,7 +45,7 @@ export function useUserOrg() {
       if (org?.id) {
         await supabase
           .from("organization_members")
-          .insert({ org_id: org.id, user_id: user.id, role: "owner" });
+          .insert({ org_id: org.id, user_id: user.id, role: "admin" });
         if (!cancelled) setOrgId(org.id);
       }
       if (!cancelled) setLoading(false);
