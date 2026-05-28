@@ -83,9 +83,10 @@ export function LogoMark({ className = "h-6 w-6" }: { className?: string }) {
   return <img src={sahaMark} alt="ToolA" className={className} />;
 }
 
-export function LogoFull({ className = "h-7" }: { className?: string }) {
-  return <img src={sahaLogo} alt="ToolA" className={`${className} w-auto`} />;
+export function LogoFull({ className }: { className?: string }) {
+  return <Logo size="sidebar" className={className} />;
 }
+
 
 export function CodeBlock({ children }: { children: string }) {
   return (
