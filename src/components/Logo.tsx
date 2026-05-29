@@ -7,9 +7,9 @@ export type LogoSize = "sidebar" | "login" | "sm";
 // Uses responsive heights so the logo stays proportional across breakpoints.
 const SIZE_CLASSES: Record<LogoSize, string> = {
   // Sidebar: compact wordmark matching typical sidebar proportions
-  sidebar: "w-[168px]",
+  sidebar: "h-8",
   // Login card: proportional to the card width (max-w-sm = 384px)
-  login: "w-[160px]",
+  login: "h-8",
   // Small inline usage (mobile header, footers)
   sm: "h-7",
 };
