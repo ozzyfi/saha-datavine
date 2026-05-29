@@ -9,7 +9,7 @@ const SIZE_CLASSES: Record<LogoSize, string> = {
   // Sidebar: compact wordmark matching typical sidebar proportions
   sidebar: "w-[168px]",
   // Login card: proportional to the card width (max-w-sm = 384px)
-  login: "w-[130px]",
+  login: "w-[160px]",
   // Small inline usage (mobile header, footers)
   sm: "h-7",
 };

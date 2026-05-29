@@ -141,7 +141,7 @@ export function SidebarContents({ active, onNavigate }: { active: Screen; onNavi
 
   return (
     <div className="h-full flex flex-col">
-      <div className="px-6 pt-5 pb-3">
+      <div className="px-6 pt-4 pb-2">
         <Logo size="sidebar" />
       </div>
 
