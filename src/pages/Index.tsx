@@ -141,11 +141,11 @@ export function SidebarContents({ active, onNavigate }: { active: Screen; onNavi
 
   return (
     <div className="h-full flex flex-col">
-      <div className="px-6 pt-2 pb-1">
+      <div className="p-6">
         <Logo size="sidebar" />
       </div>
 
-      <div className="px-6 pt-2 pb-3 space-y-3">
+      <div className="px-6 pb-6 space-y-6">
 
         <button className="w-full flex items-center justify-between rounded-md border border-border bg-card px-3 py-2.5 text-left hover:border-foreground/20 transition-colors">
           <div className="flex items-center gap-2.5 min-w-0">
