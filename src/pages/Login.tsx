@@ -45,7 +45,7 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
       <div className="w-full max-w-sm border border-border rounded-lg bg-card p-8">
-        <div className="mt-2 mb-6">
+        <div className="mt-2 mb-4">
           <Logo size="login" />
         </div>
 

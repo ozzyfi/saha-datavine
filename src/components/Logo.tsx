@@ -6,10 +6,10 @@ export type LogoSize = "sidebar" | "login" | "sm";
 // Centralized sizing for the ToolA wordmark. Tweak here to update everywhere.
 // Uses responsive heights so the logo stays proportional across breakpoints.
 const SIZE_CLASSES: Record<LogoSize, string> = {
-  // Sidebar: large, balanced with the workspace card below
-  sidebar: "h-14 sm:h-16 lg:h-[68px]",
-  // Login card: bold, prominent wordmark
-  login: "w-[190px]",
+  // Sidebar: compact wordmark matching typical sidebar proportions
+  sidebar: "h-9 sm:h-10",
+  // Login card: proportional to the card width (max-w-sm = 384px)
+  login: "w-[136px]",
   // Small inline usage (mobile header, footers)
   sm: "h-7",
 };
